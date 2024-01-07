@@ -10,7 +10,7 @@ export const UsersListItem = ({ user }: { user: User }) => {
   const { posts } = usePostsContext();
   const { id, name } = user;
 
-  const userPostsCount = posts[id].length;
+  const userPostsCount = posts[id]?.length;
 
   const onCardClick = useCallback(() => {
     router.push(`/user/${id}`);
