@@ -4,7 +4,7 @@
 }
 body {
   max-width: 1024px;
-  margin: auto;
+  margin: 50px auto;
 }
 .spacing-20 {
   gap: var(--spacing-20);
