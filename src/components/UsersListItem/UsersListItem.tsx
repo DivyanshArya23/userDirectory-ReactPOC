@@ -18,7 +18,8 @@ export const UsersListItem = ({ user }: { user: User }) => {
 
   return (
     <div
-      className={clsx("d-flex row justify-space-between pointer", styles.card)}
+      title="Click to visit user profile"
+      className={clsx("d-flex row justify-space-between pointer ", styles.card)}
       onClick={onCardClick}
     >
       <div className="d-flex">Name : {name}</div>

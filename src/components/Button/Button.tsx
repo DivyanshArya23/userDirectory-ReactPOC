@@ -1,10 +1,15 @@
 import { ReactNode } from "react";
 
 type ButtonProps = {
-  children: ReactNode;
-  onClick: (e: any) => void;
+  children?: ReactNode;
+  onClick?: (e: any) => void;
+  title?: string;
 };
 
-export const Button = ({ children, onClick }: ButtonProps) => {
-  return <button onClick={onClick}>{children}</button>;
+export const Button = ({ children, onClick, title }: ButtonProps) => {
+  return (
+    <button title={title} onClick={onClick}>
+      {children}
+    </button>
+  );
 };

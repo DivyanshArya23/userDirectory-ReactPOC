@@ -1,4 +1,5 @@
 "use client";
+import { Button } from "@/components/Button/Button";
 import { CountryClock } from "@/components/CountryClock/CountryClock";
 import { PostsList } from "@/components/PostsList/PostsList";
 import { UserCard } from "@/components/UserCard/UserCard";
@@ -21,13 +22,14 @@ const UserPage = ({ params }: { params: { userId: string } }) => {
       </div>
       <div className="d-flex row flex-wrap justify-space-between">
         <div>
-          <button
+          <Button
+            title="Click to Go Back"
             onClick={() => {
               router.push("/");
             }}
           >
             Back
-          </button>
+          </Button>
         </div>
         <CountryClock />
       </div>
