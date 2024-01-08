@@ -27,6 +27,7 @@ export const ClockCounter = ({ time }: ClockCounterProps) => {
   useEffect(() => {
     setClock(timeInMs);
     if (!isRunning) {
+      stopClock();
       startClock();
     }
   }, [timeInMs]);
