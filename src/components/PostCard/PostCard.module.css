@@ -1,5 +1,26 @@
 .postCard {
   border: 1px solid red;
   border-radius: 15px;
-  padding: 10px;
+  padding: 10px 20px;
+}
+
+.postModal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.65);
+}
+
+.card {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  max-width: 300px;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  border-radius: 15px;
+  border: 2px solid black;
 }
